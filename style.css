@@ -236,23 +236,30 @@ li {
   margin-bottom: 10px;
 }
 
-#sponsor-advertise {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 .sponsor-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  gap: 30px;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .sponsor-photos img {
-  max-width: 500px;
-  max-height:500px;
-  object-fit: cover;
-  margin-left: 10px;
+  max-width: 250px;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.sponsor-photos img:hover {
+  transform: scale(1.05);
 }
 
 .robot-entry {
+  display: flex;
   text-align: center;
   padding: 40px 20px;
   max-width: 900px;
@@ -418,6 +425,16 @@ section.subteam {
 
 .custom-button:hover {
   background-color: #a036af; /* slightly darker for hover effect */
+}
+
+#sponsor-advertise {
+  margin-top: 40px; /* increase space */
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* STYLE NAV BAR */
